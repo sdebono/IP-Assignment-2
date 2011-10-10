@@ -1,0 +1,215 @@
+/* ============= Global styles which affect the whole site ============= */
+* 
+{ 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Arial, Helvetica, Sans-Serif;
+    outline: none;
+}
+
+* a
+{
+    text-decoration: none;   
+    color: #003366   
+}
+
+* a:hover
+{
+    color: #878787   
+}
+
+/* ============= Page settings ============= */
+html 
+{
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    display: block;
+    overflow:auto
+}
+
+body 
+{
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    background: #999;
+    background: #000 url('../img/white_strip_tile.png') top center fixed no-repeat; 
+    background-repeat: repeat;
+    display: block;
+    overflow:auto;
+}
+
+/* ============= Specific areas on the page ============= */
+      
+#global_top_bar
+{
+    width: 100%;
+    position: relative;
+    float: right;
+}
+    
+#global_wrapper
+{
+    height: auto;
+    width: 70%;
+    display: block;
+    min-height: 100%;
+    min-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    position: relative;   
+    padding-top: 0;
+    background-color: White;
+}
+    
+.global_topbar_item
+{
+    padding-left: 5px;
+    padding-right: 5px;   
+}
+    
+#global_header_wrapper
+{
+    padding: 15px;
+    background-color: #EBEBEB;
+    background-repeat: repeat;   
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-bottom: 1px solid #DEDEDE; 
+    position: relative;
+    height: 12%;
+    min-height: 100px;
+}
+    
+#header_wrapper
+{
+    width: 100%;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+    
+#global_title_wrapper
+{
+    font-family: "Helvetica", "Helvetica Neue", "Arial"; 
+    font-size: 2em;
+    color: #000033;
+}
+    
+#global_menu_wrapper
+{
+    width: 100%;  
+    position: relative;      
+}
+
+.global_menu_item
+{
+    padding-right: 33px !important;
+}
+
+#global_sidebar_wrapper
+{
+    position: relative;
+    float: right;
+    width: 25%;
+    height: 100%;
+    min-height: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+       
+#global_content_wrapper
+{
+    position: relative;
+    display: block;
+    height: auto;
+    width: 70%;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 1em;
+    float: left;
+    border-right: 1px solid #DEDEDE;
+    margin-bottom: 1em;
+}
+    
+#content_wrapper
+{
+    position: relative;
+    height: auto;   
+}
+    
+#global_footer_wrapper
+{
+    bottom: 0;
+    position: absolute;
+    width: 100%;  
+    height: 2em; 
+    margin-left: -15px;
+    border-top: 1px solid #DEDEDE;
+}
+
+#content_header_wrapper
+{
+    font-size: 1.6em;
+    color: #878787;
+}
+    
+/* ============= Generic reusable classes ============= */    
+.border_glow
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.border_glow_red
+{
+    box-shadow: 0 0 10px rgba(255, 0, 0, 1);
+	-webkit-box-shadow: 0 0 10px rgba(255, 0, 0, 1);
+	-moz-box-shadow: 0 0 10px rgba(1, 0, 0, 1);
+}
+
+.round_corners 
+{
+    border-radius: 15px;
+    -webkit-box-shadow: 15px;
+    -moz-border-radius: 15px;
+}
+
+.center_text
+{
+    text-align: center;   
+}
+    
+.clear
+{
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+.horizontal_divider
+{
+    color: #DEDEDE;
+    background-color: #DEDEDE;
+    height: 1px;
+    border-style: none;
+}
+
+.navigate_button
+{
+    float: right;
+    border: 1px solid #DEDEDE;   
+    background: #EFEFEF;
+    padding: 7px; 
+}
+
+.horizontal_separator
+{
+    padding-left: 10px;
+    padding-right: 10px;   
+}
