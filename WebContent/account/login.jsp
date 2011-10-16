@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@taglib prefix="f" tagdir="/WEB-INF/tags/forms" %>
 
 <t:base_page>
 	<jsp:attribute name="header">
@@ -28,7 +29,7 @@
 	
 	<jsp:body>
 		<form name="register_form" method="post" action="${pageContext.request.contextPath}/account/login_handler/" enctype="application/x-www-form-urlencoded">
-			<t:login_form />
+			<f:login_form />
 			<br />
 			<input type="submit" name="submit" value="Login" class="grey_button"/>
 		</form>

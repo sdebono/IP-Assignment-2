@@ -6,6 +6,8 @@
 <%@attribute name="sidebar" fragment="true" %>
 <%@attribute name="footer" fragment="true" %>
 
+<%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head runat="server">
@@ -18,8 +20,8 @@
             <div id="global_header_wrapper">
                 <div id="header_wrapper">
                     <div id="global_top_bar">
-                        <div>
-                        	DG & SD present:
+                        <div style="float: right;">
+                        	<t:login_status />
                         </div>
                         <div class="clear"></div>
                     </div>
