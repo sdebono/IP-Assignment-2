@@ -3,47 +3,47 @@
 <table>
 	<tr>
 		<th>User Name:</th>
-		<td><input type="text" name="username" value="<%= request.getAttribute("username") %>"></td>
+		<td><input type="text" name="username" value="<%= request.getAttribute("username") == null ? "" : request.getAttribute("username") %>"></td>
 	</tr>
 	<tr>
 		<th>Password:</th>
-		<td><input type="password" name="password" value="<%= request.getAttribute("password") %>"></td>
+		<td><input type="password" name="password" value="<%= request.getAttribute("password") == null ? "" : request.getAttribute("password") %>"></td>
 	</tr>
 	<tr>
 		<th>First Name:</th>
-		<td><input type="text" name="firstname" value="<%= request.getAttribute("firstname") %>"></td>
+		<td><input type="text" name="firstname" value="<%= request.getAttribute("firstname") == null ? "" : request.getAttribute("firstname") %>"></td>
 	</tr>
 	<tr>
 		<th>Last Name:</th>
-		<td><input type="text" name="lastname" value="<%= request.getAttribute("lastname") %>"></td>
+		<td><input type="text" name="lastname" value="<%= request.getAttribute("lastname") == null ? "" : request.getAttribute("lastname") %>"></td>
 	</tr>
 	<tr>
 		<th>Email:</th>
-		<td><input type="text" name="email" value="<%= request.getAttribute("email") %>"></td>
+		<td><input type="text" name="email" value="<%= request.getAttribute("email") == null ? "" : request.getAttribute("email") %>"></td>
 	</tr>
 	<tr>
 		<th>Phone:</th>
-		<td><input type="text" name="phone" value="<%= request.getAttribute("phone") %>"></td>
+		<td><input type="text" name="phone" value="<%= request.getAttribute("phone") == null ? "" : request.getAttribute("phone") %>"></td>
 	</tr>
 	<tr>
 		<th>Credit Card Number:</th>
-		<td><input type="text" name="creditcardnumber" value="<%= request.getAttribute("creditcardnumber") %>"></td>
+		<td><input type="text" name="creditcardnumber" value="<%= request.getAttribute("creditcardnumber") == null ? "" : request.getAttribute("creditcardnumber") %>"></td>
 	</tr>
 	<tr>
 		<th>Address Number:</th>
-		<td><input type="text" name="addressnumber" value="<%= request.getAttribute("addressnumber") %>"></td>
+		<td><input type="text" name="addressnumber" value="<%= request.getAttribute("addressnumber") == null ? "" : request.getAttribute("addressnumber") %>"></td>
 	</tr>
 	<tr>
 		<th>Address Street:</th>
-		<td><input type="text" name="addressstreet" value="<%= request.getAttribute("addressstreet") %>"></td>
+		<td><input type="text" name="addressstreet" value="<%= request.getAttribute("addressstreet") == null ? "" : request.getAttribute("addressstreet") %>"></td>
 	</tr>
 	<tr>
 		<th>Address Suburb:</th>
-		<td><input type="text" name="addresssuburb" value="<%= request.getAttribute("addresssuburb") %>"></td>
+		<td><input type="text" name="addresssuburb" value="<%= request.getAttribute("addresssuburb") == null ? "" : request.getAttribute("addresssuburb") %>"></td>
 	</tr>
 	<tr>
 		<th>Address Postcode:</th>
-		<td><input type="text" name="addresspostcode" value="<%= request.getAttribute("addresspostcode") %>"></td>
+		<td><input type="text" name="addresspostcode" value="<%= request.getAttribute("addresspostcode") == null ? "" : request.getAttribute("addresspostcode") %>"></td>
 	</tr>
 	<tr>
 		<th>Address State:</th>
