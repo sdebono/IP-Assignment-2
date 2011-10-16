@@ -7,23 +7,23 @@
 	</jsp:attribute>
 	
 	<jsp:attribute name="head">
-		head
+		
 	</jsp:attribute>
 	
 	<jsp:attribute name="content_header">
-		content head
+		Registration
 	</jsp:attribute>
 	
 	<jsp:attribute name="content_submenu">
-		content submenu
+		Sign up for a new account to place bids & sell items
 	</jsp:attribute>
 	
 	<jsp:attribute name="sidebar">
-		sidebar	
+
 	</jsp:attribute>
 	
 	<jsp:attribute name="footer">
-		footer
+		
 	</jsp:attribute>
 	
 	<jsp:body>

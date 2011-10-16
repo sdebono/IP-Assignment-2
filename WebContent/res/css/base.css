@@ -18,6 +18,14 @@
     color: #878787   
 }
 
+* th
+{
+	text-align: left;
+	padding-right: 10px;
+	font-weight: normal;   
+    color: #003366
+}
+
 /* ============= Page settings ============= */
 html 
 {
@@ -150,6 +158,8 @@ body
     height: 2em; 
     margin-left: -15px;
     border-top: 1px solid #DEDEDE;
+    font-size: small;
+    color: #878787;
 }
 
 #content_header_wrapper
@@ -200,16 +210,31 @@ body
     border-style: none;
 }
 
-.navigate_button
+.grey_button
 {
-    float: right;
     border: 1px solid #DEDEDE;   
     background: #EFEFEF;
     padding: 7px; 
+    min-width: 50px;
+    display: inline-block;
+    text-align: center;
 }
 
+.grey_button:hover
+{
+    color: #003366 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
 .horizontal_separator
 {
     padding-left: 10px;
     padding-right: 10px;   
+}
+
+.single_message
+{
+    text-align: center; 
+    padding-top: 20%;
 }

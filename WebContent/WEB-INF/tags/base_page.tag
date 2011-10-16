@@ -29,7 +29,8 @@
                 </div>
 
                 <div id="global_menu_wrapper">
-                    Menu 1 | Menu 2 | Menu 3
+                    <a class="global_menu_item" href="${pageContext.request.contextPath}/ItemList.jsp">Item List</a>
+                    <a class="global_menu_item" href="${pageContext.request.contextPath}/BiddingHistory.jsp">Bidding History</a>
                 </div>
             </div>
 
@@ -48,6 +49,7 @@
                 </div>
 
                 <div id="content_wrapper">
+                	<br />
 					<jsp:doBody />
                     <div class="clear"></div>
                 </div>
@@ -57,6 +59,7 @@
 
             <div id="global_footer_wrapper" class="center_text">
  				<jsp:invoke fragment="footer"/>
+ 				A DG & SD Production
             </div>
         </div>  
     </body>
