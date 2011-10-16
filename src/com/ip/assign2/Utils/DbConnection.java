@@ -63,7 +63,7 @@ public class DbConnection implements Serializable{
 			}
 		}
 		
-		System.err.println("SQL STRING: " + sql.toString());
+		Log.debug("SQL STRING: " + sql.toString());
 		
 		if( executeUpdate(sql.toString()) > 0) {
 			return true;
