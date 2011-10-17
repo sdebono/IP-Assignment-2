@@ -3,10 +3,6 @@
 <%@taglib prefix="f" tagdir="/WEB-INF/tags/forms" %>
 
 <t:base_page>
-	<jsp:attribute name="header">
-		
-	</jsp:attribute>
-	
 	<jsp:attribute name="head">
 		
 	</jsp:attribute>

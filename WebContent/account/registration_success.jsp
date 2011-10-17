@@ -2,10 +2,6 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:base_page>
-	<jsp:attribute name="header">
-		
-	</jsp:attribute>
-	
 	<jsp:attribute name="head">
 		
 	</jsp:attribute>

@@ -1,5 +1,4 @@
 <%@tag description="Base Template Tag" pageEncoding="UTF-8"%>
-<%@attribute name="header" fragment="true" %>
 <%@attribute name="head" fragment="true" %>
 <%@attribute name="content_header" fragment="true" %>
 <%@attribute name="content_submenu" fragment="true" %>
@@ -14,6 +13,8 @@
         <title>Online Auction Site</title>
         
         <link href="${pageContext.request.contextPath}/res/css/base.css" rel="stylesheet" type="text/css" />
+        
+        <jsp:invoke fragment="head"/>
     </head>
     <body>  
         <div id="global_wrapper" class="border_glow">
