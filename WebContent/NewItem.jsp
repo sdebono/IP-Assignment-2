@@ -2,12 +2,8 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:base_page>
-	<jsp:attribute name="header">
-		
-	</jsp:attribute>
-	
 	<jsp:attribute name="head">
-		<link href="${pageContext.request.contextPath}/res/css/base.css" rel="stylesheet" type="text/css" />
+		<link href="${pageContext.request.contextPath}/res/css/NewItem.css" rel="stylesheet" type="text/css" />
 	</jsp:attribute>
 	
 	<jsp:attribute name="content_header">
