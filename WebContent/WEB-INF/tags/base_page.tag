@@ -9,7 +9,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
+    <head>
         <title>Online Auction Site</title>
         
         <link href="${pageContext.request.contextPath}/res/css/base.css" rel="stylesheet" type="text/css" />
@@ -63,7 +63,7 @@
 
             <div id="global_footer_wrapper" class="center_text">
  				<jsp:invoke fragment="footer"/>
- 				A DG & SD Production
+ 				A DG and SD Production
             </div>
         </div>  
     </body>
