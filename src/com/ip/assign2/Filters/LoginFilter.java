@@ -35,10 +35,10 @@ public class LoginFilter implements Filter {
 		UserBean user = (UserBean)((HttpServletRequest)request).getSession().getAttribute("user");
 		
 		if(user == null || !user.isLoggedIn()) {
-			Log.info("Redirecting to login page");
+			Log.debug("Redirecting to login page");
 			((HttpServletResponse) response).sendRedirect(((HttpServletRequest)request).getContextPath() + "/account/login.jsp");
 		} else {
-			Log.info("User logged in. Continuing");
+			Log.debug("User logged in. Continuing");
 			chain.doFilter(request, response);
 		}
 	}
