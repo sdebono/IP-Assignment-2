@@ -32,11 +32,7 @@
 			<f:login_form />
 			<br />
 			
-			<t:error>
-				<jsp:body>
-					Incorrect username/password
-				</jsp:body>
-			</t:error>
+			<t:error />
 			
 			<input type="submit" name="submit" value="Login" class="grey_button"/>
 		</form>

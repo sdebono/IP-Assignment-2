@@ -31,6 +31,8 @@
 		<form name="register_form" method="post" action="${pageContext.request.contextPath}/account/registration_handler/" enctype="application/x-www-form-urlencoded">
 			<f:user_registration_form />
 			
+			<t:error />
+			
 			<input type="submit" name="submit" value="Register" />
 		</form>
 	</jsp:body>
