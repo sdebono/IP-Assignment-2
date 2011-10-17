@@ -4,9 +4,13 @@ import java.io.Serializable;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Types;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Vector;
 
 public class DbConnection implements Serializable{
@@ -115,13 +119,45 @@ public class DbConnection implements Serializable{
 			
 	public boolean executeUpdate(String command, Vector<String> params) {
 		
-		String sql = buildSql(command, params);
+		final String sql = buildSql(command, params);
 		Log.debug("SQL STRING: " + sql);
 		
 		if( executeUpdate(sql) > 0) {
 			return true;
 		} else {
 			return false;
+		}
+	}
+	
+	public Map<String, String> executeSingleReader(String command, Vector<String> params) {
+		final String sql = buildSql(command, params);
+		
+		try {
+			final Statement s = mDbCon.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+			final ResultSet rs = s.executeQuery(sql);
+			final ResultSetMetaData rsmd = rs.getMetaData();
+			
+			if(rs.first()) {
+				Log.debug("Got 1 row in single reader & " + rsmd.getColumnCount() + " columns");
+				
+				//Return the values for this column
+				final Map<String, String> retval = new HashMap<String, String>();
+				
+				for(int i = 1, size = rsmd.getColumnCount(); i <= size; i++) {
+					Log.debug("GOT COLUMN: " + rsmd.getColumnName(i) + " = " + rs.getString(i));
+					retval.put(rsmd.getColumnName(i), rs.getString(i));
+				}
+				
+				return retval;
+			} else {
+				Log.debug("Got no results from single reader");
+				
+				return null;
+			}
+		} catch(Exception e) {
+			//Log.info("ERROR: " + e.toString());
+			e.printStackTrace();
+			return null;
 		}
 	}
 }

@@ -8,4 +8,6 @@ public class DbCommand {
 	public static final String INSERT_NEW_USER = " sp_insert_new_user ";
 	
 	public static final String VALIDATE_LOGIN = " sp_validate_login ";
+	
+	public static final String GET_USER_DETAILS = " sp_get_user_details ";
 }

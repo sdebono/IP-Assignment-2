@@ -29,4 +29,14 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/account/login_handler/</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.ip.assign2.Servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/account/logout_handler/</url-pattern>
+  </servlet-mapping>
 </web-app>

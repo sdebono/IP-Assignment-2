@@ -5,7 +5,7 @@
 	scope="session" />
 
 <% if(user.isLoggedIn()) { %>
-	<a href="${pageContext.request.contextPath}/account/logout_handler">Log Out</a>
+	<a href="${pageContext.request.contextPath}/account/logout_handler/">Log Out</a>
 <% 
      } else {
  %>

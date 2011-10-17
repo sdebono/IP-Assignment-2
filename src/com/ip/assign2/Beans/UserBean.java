@@ -10,11 +10,12 @@ public class UserBean implements java.io.Serializable{
 	private String mEmail;
 	private String mPhone;
 	private String mCreditCardNumber;
+	private String mAddressId;
 	private String mAddressNumber;
 	private String mAddressStreet;
 	private String mAddressSuburb;
 	private String mAddressState;
-	private int mAddressPostcode;
+	private String mAddressPostcode;
 	
 	private boolean mLoggedIn = false;
 	
@@ -106,12 +107,24 @@ public class UserBean implements java.io.Serializable{
 		this.mAddressState = mAddressState;
 	}
 	
-	public int getAddressPostcode() {
+	public String getAddressPostcode() {
 		return mAddressPostcode;
 	}
 	
-	public void setAddressPostcode(int mAddressPostcode) {
+	public void setAddressPostcode(String mAddressPostcode) {
 		this.mAddressPostcode = mAddressPostcode;
+	}
+	
+	public String getAddressId() {
+		return mAddressId;
+	}
+	
+	public void setAddressId(String mAddressId) {
+		this.mAddressId = mAddressId;
+	}
+	
+	public void isLoggedIn(boolean mLoggedIn) {
+		this.mLoggedIn = mLoggedIn;
 	}
 	
 	public boolean isLoggedIn() {
