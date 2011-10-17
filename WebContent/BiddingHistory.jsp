@@ -23,7 +23,17 @@
 	</jsp:attribute>
 	
 	<jsp:body>
-		
+		<div style="padding-left: 50px;">
+			<ul>
+				<li>
+					Links to other pages in order to:
+					<ul style="padding-left: 20px;">
+						<li>View personal bidding history</li>
+						<li>View bidding history on own items</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</jsp:body>
 </t:base_page>
 
