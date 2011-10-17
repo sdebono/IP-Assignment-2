@@ -238,3 +238,11 @@ body
     text-align: center; 
     padding-top: 20%;
 }
+
+.error_message
+{
+	color: Red;
+	font-size: small;
+	font-weight: bold;
+	padding-bottom: 10px;
+}

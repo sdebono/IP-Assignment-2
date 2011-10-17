@@ -31,6 +31,13 @@
 		<form name="register_form" method="post" action="${pageContext.request.contextPath}/account/login_handler/" enctype="application/x-www-form-urlencoded">
 			<f:login_form />
 			<br />
+			
+			<t:error>
+				<jsp:body>
+					Incorrect username/password
+				</jsp:body>
+			</t:error>
+			
 			<input type="submit" name="submit" value="Login" class="grey_button"/>
 		</form>
 	</jsp:body>

@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 		
 		if(!success) {
 			//TODO: Need to show error message!
-		
+			request.setAttribute("is_error", true);
 			request.getRequestDispatcher("/account/login.jsp").forward(request, response);
 		} else {
 			response.sendRedirect(request.getContextPath() + "/index.jsp");
