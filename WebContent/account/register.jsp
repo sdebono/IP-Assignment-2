@@ -29,7 +29,7 @@
 			
 			<t:error />
 			
-			<input type="submit" name="submit" value="Register" />
+			<input type="submit" name="submit" value="Register" class="grey_button"/>
 		</form>
 	</jsp:body>
 </t:base_page>
