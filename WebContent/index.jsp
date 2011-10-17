@@ -3,7 +3,7 @@
 
 <t:base_page>	
 	<jsp:attribute name="head">
-		head
+		
 	</jsp:attribute>
 	
 	<jsp:attribute name="content_header">
