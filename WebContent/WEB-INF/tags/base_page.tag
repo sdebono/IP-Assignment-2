@@ -33,6 +33,7 @@
                 <div id="global_menu_wrapper">
                     <a class="global_menu_item" href="${pageContext.request.contextPath}/ItemList.jsp">Item List</a>
                     <a class="global_menu_item" href="${pageContext.request.contextPath}/BiddingHistory.jsp">Bidding History</a>
+                    <a class="global_menu_item" href="${pageContext.request.contextPath}/NewItem.jsp">New Item</a>
                 </div>
             </div>
 

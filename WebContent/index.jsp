@@ -23,7 +23,7 @@
 	</jsp:attribute>
 	
 	<jsp:attribute name="footer">
-		footer
+		
 	</jsp:attribute>
 	
 	<jsp:body>
