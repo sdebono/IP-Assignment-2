@@ -48,4 +48,9 @@
     <filter-name>LoginFilter</filter-name>
     <url-pattern>/NewItem.jsp</url-pattern>
   </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/BiddingHistory.jsp</url-pattern>
+  </filter-mapping>
+  
 </web-app>
